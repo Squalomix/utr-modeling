@@ -4,14 +4,16 @@ This page provides a third-party guide to modifying an existing GTF file by exte
 
 ## Step-by-step guide
 
-1. Installing peaks2utr v1.1.2
+1. Installation
+
+1.1. Installing peaks2utr v1.1.2<br>
 Follow the official instruction to install with ‘pip’.
 ```
 pip install peaks2utr
 ```
 Also see Supplementary Data of the developer’s publication ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
 
-Installing cellranger v7.1.0
+1.2. Installing cellranger v7.1.0<br>
 
 Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.
 
@@ -19,22 +21,24 @@ Follow the [official instruction](https://support.10xgenomics.com/single-cell-ge
 
    e.g., [Oryzias_latipes.ASM223467v1.110.gtf.gz](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/)
 
-3. Prepare a genome assembly (assembly.fna) [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/Oryzias_latipes.ASM223467v1.dna_rm.toplevel.fa.gz)
+3. Prepare a genome assembly (assembly.fna)
+
+   e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/Oryzias_latipes.ASM223467v1.dna_rm.toplevel.fa.gz)
 
 4. Prepare input .bam file
 
-4.1. Use 10X Chromium single cell RNA-seq data set 
+4.1. Use 10X Chromium single cell RNA-seq data set <br>
       Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodel.gtf) using the genome assembly (assembly.fna) (see the official guide)
       Map the reads with ‘cellranger count’ using the fastq data in the directory (fastq_dir)
 ```
 cellranger mkref –genome=custom_ref –genes=genemodel.gtf –fasta=assembly.fna
 cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
 ```
-4.2. Use bulk RNA-seq data
-	      Map the trimmed reads with hisat2 or equivalent using the genome assembly (assembly.fna)
+4.2. Use bulk RNA-seq data<br>
+Map the trimmed reads with hisat2 or equivalent using the genome assembly (assembly.fna)
 
 
-5. Run peaks2utr using the BAM made by cellranger
+5. Run peaks2utr using the BAM made by cellranger<br>
 ```
 peaks2utr –gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
 ```
@@ -42,7 +46,7 @@ Consider tweaking the parameter --max-distance ('maximum distance in bases that 
 
 
 
-6. Analyze the peaks2utr output 
+6. Analyze the peaks2utr output<br>
 
  6.1. Open the output file 'summary_stats.txt'
 
