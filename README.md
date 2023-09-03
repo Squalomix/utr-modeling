@@ -3,7 +3,7 @@
 
 ## Step-by-step guide for UTR modeling
 
-This page provides a third-party guide to modifying an existing GTF file by extending 3’-ends of transcripts using the program [peaks2utr](https://github.com/haessar/peaks2utr). This process is demanded by possible data loss caused due to the biased distribution of the reads obtained in some transcriptome sequencing methods including the [Chromium Single Cell Gene Expression of 10X Genomics](https://www.10xgenomics.com/products/single-cell-gene-expression).<br>
+This page provides a third-party guide to modifying an existing GTF file by extending 3’-ends of transcripts using the program [peaks2utr](https://github.com/haessar/peaks2utr). This process is demanded by possible data loss caused due to the biased distribution of the reads obtained in some transcriptome sequencing methods including the [Chromium Single Cell Gene Expression of 10X Genomics](https://www.10xgenomics.com/products/single-cell-gene-expression). The versions of the programs and example files employed below in this guide follows our own experience with medaka demonstrated as part of the activity of NBRP Medaka Project of Japan <br>
 
 
 ### 1. Installation
@@ -52,20 +52,22 @@ Consider tweaking the parameter --max-distance ('maximum distance in bases that 
 
  6.1. Open the output file 'summary_stats.txt'
 
- 6.2 Use agat_sp_statisctics.pl from [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
+ 6.2. Use ‘agat_sp_statisctics.pl’ from [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
 
 
 ### 7. Prepare a reference gene model with ‘cellranger mkref’ inputting the GTF (genemodelNEW.gtf) modified by peaks2utr
+
 ```
 cellranger mkref –genome=custom_refNEW –genes=genemodelNEW.gtf –fasta=assembly.fna
 ```
 
-### 8. Map scRNA-seq reads with ‘cellranger count’ 
+### 8. Map scRNA-seq reads
+
 ```
 cellranger count –id=run_countNEW –fastq=fastq_dir –transcriptome=custom_refNEW
 ```
 
-### 9. Analyze the output from 'cellranger count'
+### 9. Analyze the output 
 
 9.1. Confirm the increase of mapping %   (compare this with ##)
 
