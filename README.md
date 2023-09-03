@@ -32,7 +32,7 @@ e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.or
 
 4.1. Use 10X Chromium single cell RNA-seq data set <br>
 <br>
-Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodel.gtf) using the genome assembly (assembly.fna) (see the official guide)
+Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodel.gtf) using the genome assembly (assembly.fna) (see the [official guide](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references))
 
 ```
 cellranger mkref –genome=custom_ref –genes=genemodel.gtf –fasta=assembly.fna
