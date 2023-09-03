@@ -37,7 +37,7 @@ cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
 4.2. Use bulk RNA-seq data<br>
 Map the trimmed reads with hisat2 or equivalent using the genome assembly (assembly.fna)
 
-<br>
+
 5. Run peaks2utr using the BAM made by cellranger
 ```
 peaks2utr –gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
@@ -53,7 +53,7 @@ Consider tweaking the parameter --max-distance ('maximum distance in bases that 
  6.2 Use agat_sp_statisctics.pl from [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
 
 
-7. Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodelNEW.gtf) and the genome assembly (assembly.fna)
+7. Prepare a reference gene model with ‘cellranger mkref’ inputting the GTF (genemodelNEW.gtf) and the genome assembly (assembly.fna)
 ```
 cellranger mkref –genome=custom_refNEW –genes=genemodelNEW.gtf –fasta=assembly.fna
 ```
