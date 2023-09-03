@@ -76,6 +76,6 @@ cellranger count –id=run_countNEW –fastq=fastq_dir –transcriptome=custom_r
 We thank Osamu Nishimura at RIKEN BDR and Satoshi Ansai at Kyoto Univ for discussion.
 
 ## References
-[Lawson et al., eLife 2020](https://elifesciences.org/articles/55792)
-[Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741)
+[Lawson et al., eLife 2020](https://elifesciences.org/articles/55792)<br>
+[Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741)<br>
 
