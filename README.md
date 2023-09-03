@@ -73,7 +73,7 @@ cellranger count –id=run_countNEW –fastq=fastq_dir –transcriptome=custom_r
 
 ### 9. Analyze the output 
 
-9.1. Confirm the increase of mapping %   (compare this with ##)
+9.1. Confirm the increase of mapping % (compare this with the product of the part 4.1)
 
 
 
