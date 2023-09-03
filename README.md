@@ -60,12 +60,12 @@ Consider tweaking the parameter --max-distance ('maximum distance in bases that 
 cellranger mkref –genome=custom_refNEW –genes=genemodelNEW.gtf –fasta=assembly.fna
 ```
 
-### 8. Map the reads with ‘cellranger count’ 
+### 8. Map scRNA-seq reads with ‘cellranger count’ 
 ```
 cellranger count –id=run_countNEW –fastq=fastq_dir –transcriptome=custom_refNEW
 ```
 
-### 9. Analyze the cellranger count output
+### 9. Analyze the output from 'cellranger count'
 
 9.1. Confirm the increase of mapping %   (compare this with ##)
 
