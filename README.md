@@ -43,7 +43,7 @@ Map the trimmed reads with [hisat2](http://daehwankimlab.github.io/hisat2/) or e
 ```
 peaks2utr –gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
 ```
-Consider tweaking the parameter --max-distance ('maximum distance in bases that UTR can be from a transcript') depending on maximum distance in bases that UTR can be from a transcript
+Consider tweaking the parameter --max-distance ('maximum distance in bases that UTR can be from a transcript') depending on typical UTR lengths and other genomic spacing trends in the species of interest. 
 
 
 <br>
