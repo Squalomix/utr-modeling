@@ -15,7 +15,7 @@ Follow the official instruction to install with ‘pip’.
 pip install peaks2utr
 ```
 Also see Supplementary Data of the developer’s publication ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
-
+<br>
 1.2. Installing cellranger v7.1.0<br>
 
 Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.<br>
