@@ -82,7 +82,10 @@ cellranger count –id=run_countNEW –fastq=fastq_dir –transcriptome=custom_r
 We thank Osamu Nishimura at RIKEN BDR and Satoshi Ansai at Kyoto Univ for discussion.
 
 ## References
+### Similar efforts
 [Bilgic et al., bioRxiv 2023 'Truncated radial glia as a common precursor in the late corticogenesis of gyrencephalic mammals'](https://www.biorxiv.org/content/10.1101/2022.05.05.490846v3)<br>
 [Lawson et al., eLife 2020 'An improved zebrafish transcriptome annotation for sensitive and comprehensive detection of cell type-specific genes'](https://elifesciences.org/articles/55792)<br>
+
+### Tools 
 [Haese-Hill et al., Bioinformatics 2023 'peaks2utr: a robust Python tool for the annotation of 3′ UTRs'](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741)<br>
 
