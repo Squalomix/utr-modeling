@@ -35,7 +35,7 @@ cellranger mkref –genome=custom_ref –genes=genemodel.gtf –fasta=assembly.f
 cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
 ```
 4.2. Use bulk RNA-seq data<br>
-Map the trimmed reads with hisat2 or equivalent using the genome assembly (assembly.fna)
+Map the trimmed reads with [hisat2](http://daehwankimlab.github.io/hisat2/) or equivalent using the genome assembly (assembly.fna)
 
 
 5. Run peaks2utr using the BAM made by cellranger
