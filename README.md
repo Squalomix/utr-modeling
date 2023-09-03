@@ -15,7 +15,7 @@ Also see Supplementary Data of the developer’s publication ([Haese-Hill et al.
 
 1.2. Installing cellranger v7.1.0<br>
 
-Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.
+Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.<br>
 
 2. Prepare a GTF from Ensembl if available (genemodel.gtf)
 
