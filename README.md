@@ -22,11 +22,11 @@ Follow the [official instruction](https://support.10xgenomics.com/single-cell-ge
 ### 2. Prepare a GTF from Ensembl if available (genemodel.gtf)
 <br>
    e.g., [Oryzias_latipes.ASM223467v1.110.gtf.gz](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/)
-<br><br>
+
 ### 3. Prepare a genome assembly (assembly.fna)
 <br>
    e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/Oryzias_latipes.ASM223467v1.dna_rm.toplevel.fa.gz)
-<br><br>
+
 ### 4. Prepare input .bam file
 
 4.1. Use 10X Chromium single cell RNA-seq data set <br>
@@ -47,8 +47,6 @@ peaks2utr –gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemo
 ```
 Consider tweaking the parameter --max-distance ('maximum distance in bases that UTR can be from a transcript') depending on typical UTR lengths and other genomic spacing trends in the species of interest. 
 
-
-<br>
 ### 6. Analyze the peaks2utr output<br>
 
  6.1. Open the output file 'summary_stats.txt'
