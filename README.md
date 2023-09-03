@@ -30,8 +30,9 @@ e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.or
 ### 4. Prepare input .bam file
 
 4.1. Use 10X Chromium single cell RNA-seq data set <br>
-      Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodel.gtf) using the genome assembly (assembly.fna) (see the official guide)
-      Map the reads with ‘cellranger count’ using the fastq data in the directory (fastq_dir)
+<br>
+Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodel.gtf) using the genome assembly (assembly.fna) (see the official guide)
+Map the reads with ‘cellranger count’ using the fastq data in the directory (fastq_dir)
 ```
 cellranger mkref –genome=custom_ref –genes=genemodel.gtf –fasta=assembly.fna
 cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
