@@ -18,13 +18,13 @@ Also see Supplementary Data of the developer’s publication ([Haese-Hill et al.
 Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.<br>
 <br>
 2. Prepare a GTF from Ensembl if available (genemodel.gtf)
-
+<br>
    e.g., [Oryzias_latipes.ASM223467v1.110.gtf.gz](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/)
-<br>
+<br><br>
 3. Prepare a genome assembly (assembly.fna)
-
-   e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/Oryzias_latipes.ASM223467v1.dna_rm.toplevel.fa.gz)
 <br>
+   e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/Oryzias_latipes.ASM223467v1.dna_rm.toplevel.fa.gz)
+<br><br>
 4. Prepare input .bam file
 
 4.1. Use 10X Chromium single cell RNA-seq data set <br>
