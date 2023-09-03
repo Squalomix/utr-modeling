@@ -1,8 +1,10 @@
-# utr-modeling
+# Genome sequence annotation
 
-This page provides a third-party guide to modifying an existing GTF file by extending 3’-ends of transcripts using the program [peaks2utr](https://github.com/haessar/peaks2utr). This process is demanded by possible data loss caused due to the biased distribution of the reads obtained in some transcriptome sequencing methods including the 10X Chromium single cell transcriptome sequencing system.
 
-## Step-by-step guide
+## Step-by-step guide for UTR modeling
+
+This page provides a third-party guide to modifying an existing GTF file by extending 3’-ends of transcripts using the program [peaks2utr](https://github.com/haessar/peaks2utr). This process is demanded by possible data loss caused due to the biased distribution of the reads obtained in some transcriptome sequencing methods including the 10X Chromium single cell transcriptome sequencing system.<br>
+
 
 1. Installation
 
