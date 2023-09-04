@@ -27,7 +27,7 @@ Follow the [official instruction](https://support.10xgenomics.com/single-cell-ge
 
 Use a GTF file from Ensembl if available for two reasons. First, 10X Genomics recommend a GTF file from Ensembl in its official page. Second, our trial of running peaks2utr with a GTF file from NCBI failed (see [Part 5](https://github.com/Squalomix/utr-modeling/tree/main#5-run-peaks2utr)).
 
-e.g., [Oryzias_latipes.ASM223467v1.110.gtf.gz](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/) 
+e.g., Oryzias_latipes.ASM223467v1.110.gtf.gz from [Ensembl](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/) 
 
 ### 3. Prepare a genome assembly file (assembly.fna)
 
