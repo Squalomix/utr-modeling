@@ -39,7 +39,7 @@ Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF
 ```
 cellranger mkref –genome=custom_ref –genes=genemodel.gtf –fasta=assembly.fna
 ```
-Map the reads with ‘cellranger count’ using the fastq data in the directory (fastq_dir)
+Map Chromium scRNA-seq reads in the directory 'fastq_dir' with ‘cellranger count’ using the fastq data in the directory (fastq_dir)
 ```
 cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
 ```
