@@ -31,7 +31,7 @@ e.g., Oryzias_latipes.ASM223467v1.110.gtf.gz from [Ensembl](https://ftp.ensembl.
 
 ### 3. Prepare a genome assembly file (assembly.fna)
 
-e.g., [Oryzias_latipes.ASM223467v1.dna.toplevel.fa.gz] downloaded from [Ensembl](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/)
+e.g., Oryzias_latipes.ASM223467v1.dna.toplevel.fa.gz downloaded from [Ensembl](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/)
 
 ### 4. Prepare input .bam file
 
