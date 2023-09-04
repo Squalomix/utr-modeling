@@ -16,7 +16,7 @@ Follow the official instruction to install with ‘pip’.
 ```
 pip install peaks2utr
 ```
-Also see Supplementary Data of the developer’s publication ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
+Also see Supplementary Data of the publication by the developers ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
 <br>
 
 **1.2.** Installing cellranger v7.1.0<br>
@@ -46,7 +46,7 @@ cellranger mkref --genome=custom_ref --genes=genemodel.gtf --fasta=assembly.fna
 ```
 Map Chromium scRNA-seq reads in the directory 'fastq_dir' with ‘cellranger count’
 ```
-cellranger count --id=run_count --fastq=fastq_dir --transcriptome=custom_ref
+cellranger count --id=run_count --fastqs=fastq_dir --transcriptome=custom_ref
 ```
 **4.2.** Use bulk RNA-seq data<br>
 <br>
@@ -78,7 +78,7 @@ cellranger mkref --genome=custom_refNEW --genes=genemodelNEW.gtf --fasta=assembl
 ### 8. Map scRNA-seq reads
 
 ```
-cellranger count --id=run_countNEW --fastq=fastq_dir --transcriptome=custom_refNEW
+cellranger count --id=run_countNEW --fastqs=fastq_dir --transcriptome=custom_refNEW
 ```
 
 ### 9. Analyze the output 
