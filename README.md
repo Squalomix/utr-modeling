@@ -20,11 +20,13 @@ Also see Supplementary Data of the developer’s publication ([Haese-Hill et al.
 
 Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.<br>
 <br>
-### 2. Prepare a GTF from Ensembl if available (genemodel.gtf)
+### 2. Prepare a GTF file (genemodel.gtf)
+
+Use a GTF file from Ensembl if available for two reasons. First, 10X Genomics recommend a GTF file from Ensembl in its official page. Second, our trial of running peaks2utr with a GTF file from NCBI failed (see [Part 5](https://github.com/Squalomix/utr-modeling/tree/main#5-run-peaks2utr)).
 
 e.g., [Oryzias_latipes.ASM223467v1.110.gtf.gz](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/)
 
-### 3. Prepare a genome assembly (assembly.fna)
+### 3. Prepare a genome assembly file (assembly.fna)
 
 e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/Oryzias_latipes.ASM223467v1.dna_rm.toplevel.fa.gz)
 
