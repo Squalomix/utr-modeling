@@ -53,7 +53,7 @@ Use the BAM file made above in Part 4 (Part 4.1 or 4.2)
 ```
 peaks2utr –gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
 ```
-Consider tweaking the parameter --max-distance ('maximum distance in bases that UTR can be from a transcript') depending on typical UTR lengths and other genomic spacing trends in the species of interest. 
+Consider tweaking the parameter --max-distance ('maximum distance in bases that UTR can be from a transcript') depending on typical UTR lengths and other genomic spacing trends in the species of interest. We manaegd to complete this whole process using a GTF file from Ensembl (see Part 2 above) and failed using a file from NCBI for an unknown reason.
 
 ### 6. Analyze the peaks2utr output<br>
 
