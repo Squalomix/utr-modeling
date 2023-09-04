@@ -8,7 +8,7 @@ This page provides a third-party guide to modifying an existing GTF file by exte
 
 ### 1. Installation
 
-1.1. Installing peaks2utr v1.1.2<br>
+**1.1.** Installing peaks2utr v1.1.2<br>
 <br>
 Follow the official instruction to install with ‘pip’.
 ```
@@ -16,7 +16,7 @@ pip install peaks2utr
 ```
 Also see Supplementary Data of the developer’s publication ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
 <br>
-1.2. Installing cellranger v7.1.0<br>
+**1.2.** Installing cellranger v7.1.0<br>
 
 Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.<br>
 <br>
@@ -34,7 +34,7 @@ e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.or
 
 The program peaks2utr is meant to employ Chromium scRNA-seq data as input (Part 4.1), but it can also accept bulk RNA-seq data (Part 4.2). Choose one of these two options.
 
-4.1. Use 10X Chromium single cell RNA-seq data set <br>
+**4.1.** Use 10X Chromium single cell RNA-seq data set <br>
 <br>
 Format the reference and gene model using the genome assembly (assembly.fna) and the GTF file (genemodel.gtf) (see the [official guide](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references))
 
@@ -45,7 +45,7 @@ Map Chromium scRNA-seq reads in the directory 'fastq_dir' with ‘cellranger cou
 ```
 cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
 ```
-4.2. Use bulk RNA-seq data<br>
+**4.2.** Use bulk RNA-seq data<br>
 <br>
 Map the trimmed reads with [hisat2](http://daehwankimlab.github.io/hisat2/) or equivalent onto the genome assembly (assembly.fna)
 <br><br>
@@ -61,9 +61,9 @@ We manaegd to complete this whole process using a GTF file from Ensembl (see [Pa
 
 ### 6. Analyze the peaks2utr output<br>
 
- 6.1. Open the output file 'summary_stats.txt'
+ **6.1.** Open the output file 'summary_stats.txt'
 
- 6.2. Use ‘agat_sp_statisctics.pl’ from [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
+ **6.2.** Use ‘agat_sp_statisctics.pl’ from [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
 
 
 ### 7. Format the reference and gene model modified by peaks2utr
@@ -80,7 +80,7 @@ cellranger count –id=run_countNEW –fastq=fastq_dir –transcriptome=custom_r
 
 ### 9. Analyze the output 
 
-9.1. Confirm an expected increase of mapping % ('Reads Mapped Confidently to Transcriptome'). Compare this with that of the product of the [Part 4.1](https://github.com/Squalomix/utr-modeling/blob/main/README.md#4-prepare-input-bam-file)
+**9.1.** Confirm an expected increase of mapping % ('Reads Mapped Confidently to Transcriptome'). Compare this with that of the product of the [Part 4.1](https://github.com/Squalomix/utr-modeling/blob/main/README.md#4-prepare-input-bam-file)
 
 
 
