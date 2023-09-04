@@ -35,7 +35,7 @@ e.g., Oryzias_latipes.ASM223467v1.dna.toplevel.fa.gz downloaded from [Ensembl](h
 
 ### 4. Prepare transcript read mapping file (.bam)
 
-The program peaks2utr is meant to employ Chromium scRNA-seq data as input (Part 4.1), but it can also accept bulk RNA-seq data (Part 4.2). Choose one of these two options.
+The program peaks2utr assumes Chromium scRNA-seq data as input (Part 4.1), but it also accepts bulk RNA-seq data (Part 4.2). Choose one of these two options.
 
 **4.1.** Use 10X Chromium single cell RNA-seq data set <br>
 <br>
