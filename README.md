@@ -25,7 +25,7 @@ Follow the [official instruction](https://support.10xgenomics.com/single-cell-ge
 <br>
 ### 2. Prepare a GTF file (genemodel.gtf)
 
-Use a GTF file from Ensembl if available for two reasons. First, 10X Genomics recommend a GTF file from Ensembl in its official page. Second, our trial of running peaks2utr with a GTF file from NCBI failed (see [Part 5](https://github.com/Squalomix/utr-modeling/tree/main#5-run-peaks2utr)).
+Use a GTF file from Ensembl if available for two reasons. First, 10X Genomics recommend a GTF file from Ensembl in [its official page](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/tutorial_mr?gclid=CjwKCAjwlJimBhAsEiwA1hrp5tIdN0_JPBX6Ma7xXRKjneF81YLy9lhTFy0WOPXsTGG951l5dwatERoCf-UQAvD_BwE) (*'If the species is available from the Ensembl database, we recommend using the files from there'*). Second, our trial of running peaks2utr with a GTF file from NCBI failed (see [Part 5](https://github.com/Squalomix/utr-modeling/tree/main#5-run-peaks2utr)).
 
 e.g., Oryzias_latipes.ASM223467v1.110.gtf.gz from [Ensembl](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/) 
 
