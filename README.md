@@ -17,6 +17,13 @@ Follow the official instruction to install with ‘pip’.
 pip install peaks2utr
 ```
 Also see Supplementary Data of the publication by the developers ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
+
+If one wants to keep a different python version as default (like the latest version 3.11), create an environment dedicated to peaks2utr.
+```
+conda create -n peaks2utr python=3.10
+conda activate peaks2utr
+```
+
 <br>
 
 **1.2.** Installing cellranger v7.1.0<br>
