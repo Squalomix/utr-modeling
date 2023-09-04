@@ -10,6 +10,8 @@ This page provides a third-party guide to modifying an existing GTF file by exte
 
 **1.1.** Installing peaks2utr v1.1.2<br>
 <br>
+The installation requires the Python version 3.8 to 3.10 (not 3.11, the latest).
+
 Follow the official instruction to install with ‘pip’.
 ```
 pip install peaks2utr
@@ -18,7 +20,7 @@ Also see Supplementary Data of the developer’s publication ([Haese-Hill et al.
 <br>
 **1.2.** Installing cellranger v7.1.0<br>
 
-Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) to install with ‘pip’.<br>
+Follow the [official instruction](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation).<br>
 <br>
 ### 2. Prepare a GTF file (genemodel.gtf)
 
@@ -39,11 +41,11 @@ The program peaks2utr is meant to employ Chromium scRNA-seq data as input (Part 
 Format the reference and gene model using the genome assembly (assembly.fna) and the GTF file (genemodel.gtf) (see the [official guide](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references))
 
 ```
-cellranger mkref –genome=custom_ref –genes=genemodel.gtf –fasta=assembly.fna
+cellranger mkref --genome=custom_ref --genes=genemodel.gtf --fasta=assembly.fna
 ```
 Map Chromium scRNA-seq reads in the directory 'fastq_dir' with ‘cellranger count’
 ```
-cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
+cellranger count --id=run_count --fastq=fastq_dir --transcriptome=custom_ref
 ```
 **4.2.** Use bulk RNA-seq data<br>
 <br>
@@ -53,7 +55,7 @@ Map the trimmed reads with [hisat2](http://daehwankimlab.github.io/hisat2/) or e
 ### 5. Run peaks2utr 
 Use the BAM file made above in Part 4 (Part 4.1 or 4.2)
 ```
-peaks2utr –gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
+peaks2utr --gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
 ```
 Consider tweaking the parameter --max-distance ('maximum distance in bases that UTR can be from a transcript') depending on typical UTR lengths and other genomic spacing trends in the species of interest. 
 
@@ -69,13 +71,13 @@ We manaegd to complete this whole process using a GTF file from Ensembl (see [Pa
 ### 7. Format the reference and gene model modified by peaks2utr
 
 ```
-cellranger mkref –genome=custom_refNEW –genes=genemodelNEW.gtf –fasta=assembly.fna
+cellranger mkref --genome=custom_refNEW --genes=genemodelNEW.gtf --fasta=assembly.fna
 ```
 
 ### 8. Map scRNA-seq reads
 
 ```
-cellranger count –id=run_countNEW –fastq=fastq_dir –transcriptome=custom_refNEW
+cellranger count --id=run_countNEW --fastq=fastq_dir --transcriptome=custom_refNEW
 ```
 
 ### 9. Analyze the output 
