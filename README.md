@@ -30,6 +30,8 @@ e.g., [Oryzias_latipes.ASM223467v1.dna_sm.toplevel.fa.gz](https://ftp.ensembl.or
 
 ### 4. Prepare input .bam file
 
+The program peaks2utr is meant to employ Chromium scRNA-seq data as input (Part 4.1), but it can also accept bulk RNA-seq data (Part 4.2)
+
 4.1. Use 10X Chromium single cell RNA-seq data set <br>
 <br>
 Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodel.gtf) using the genome assembly (assembly.fna) (see the [official guide](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references))
