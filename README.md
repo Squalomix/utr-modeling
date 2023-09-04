@@ -48,7 +48,8 @@ cellranger count –id=run_count –fastq=fastq_dir –transcriptome=custom_ref
 Map the trimmed reads with [hisat2](http://daehwankimlab.github.io/hisat2/) or equivalent onto the genome assembly (assembly.fna)
 <br><br>
 
-### 5. Run peaks2utr using the BAM file made above in Part 4
+### 5. Run peaks2utr 
+Use the BAM file made above in Part 4 (Part 4.1 or 4.2)
 ```
 peaks2utr –gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
 ```
