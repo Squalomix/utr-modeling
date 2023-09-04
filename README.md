@@ -36,7 +36,7 @@ The program peaks2utr is meant to employ Chromium scRNA-seq data as input (Part 
 
 4.1. Use 10X Chromium single cell RNA-seq data set <br>
 <br>
-Prepare reference gene model using GTF with ‘cellranger mkref’ using the GTF (genemodel.gtf) using the genome assembly (assembly.fna) (see the [official guide](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references))
+Format the reference and gene model using the genome assembly (assembly.fna) and the GTF file (genemodel.gtf) (see the [official guide](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references))
 
 ```
 cellranger mkref –genome=custom_ref –genes=genemodel.gtf –fasta=assembly.fna
@@ -66,7 +66,7 @@ We manaegd to complete this whole process using a GTF file from Ensembl (see [Pa
  6.2. Use ‘agat_sp_statisctics.pl’ from [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
 
 
-### 7. Format the gene model modified by peaks2utr
+### 7. Format the reference and gene model modified by peaks2utr
 
 ```
 cellranger mkref –genome=custom_refNEW –genes=genemodelNEW.gtf –fasta=assembly.fna
