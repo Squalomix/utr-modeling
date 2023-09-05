@@ -16,7 +16,7 @@ Follow the official instruction to install with ‘pip’.
 ```
 pip install peaks2utr
 ```
-Also see Supplementary Data of the publication by the developers ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
+Also see [Supplementary Data](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/3/10.1093_bioinformatics_btad112/1/btad112_supplementary_data.pdf?Expires=1696898659&Signature=isAHjYnrwKo3eSLMN7b-ibV3x7Q3MpGESOwq2bXk5yNhzrpr1rEz-s9hOWeBQM~YU7HHS9kSgphEio6ZCIIObPNtacYmqTcO8a7E~JwTHyKyUGQRZjEsDW11pWADTzpxNTEVRUqScOoToHiyZLbbOFOQvp0wmOEBuE-C3q1Qe-qj0PhNLOxk~uUH~eEAXPahbsUZvrbe4qnlF5PCkQEWcFY6CPXBEx-i2~9xY5WL6Ljaso8dxpct6jna2rYUfUx7o5Asx6wPXrsxRizDBbhAkRYepe496-mKCToDwzkVLjhUvs4~dBkZrDhcoEa6DgLkZCadYDXUoJ7LpV9YX1A0Ew__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA) of the publication by the developers ([Haese-Hill et al., Bioinformatics 2023](https://academic.oup.com/bioinformatics/article/39/3/btad112/7067741))
 
 If one wants to keep a different python version as default (like the latest version 3.11), create an environment dedicated to peaks2utr.
 ```
