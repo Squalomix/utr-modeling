@@ -12,7 +12,7 @@ This page provides a third-party guide to modifying an existing GTF file by exte
 <br>
 The installation requires the Python version 3.8 to 3.10 (not 3.11, the latest).
 
-Follow the official instruction to install with ‘pip’.
+Follow the official instruction to install with <CODE>pip</CODE>.
 ```
 pip install peaks2utr
 ```
@@ -34,11 +34,11 @@ Follow the [official instruction](https://support.10xgenomics.com/single-cell-ge
 
 Use a GTF file from Ensembl if available for two reasons. First, 10X Genomics recommend a GTF file from Ensembl in [its official page](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/tutorial_mr?gclid=CjwKCAjwlJimBhAsEiwA1hrp5tIdN0_JPBX6Ma7xXRKjneF81YLy9lhTFy0WOPXsTGG951l5dwatERoCf-UQAvD_BwE) (*'If the species is available from the Ensembl database, we recommend using the files from there'*). Second, our trial of running peaks2utr with a GTF file from NCBI failed (see [Part 5](https://github.com/Squalomix/utr-modeling/tree/main#5-run-peaks2utr)).
 
-e.g., Oryzias_latipes.ASM223467v1.110.gtf.gz from [Ensembl](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/) 
+e.g., <CODE>Oryzias_latipes.ASM223467v1.110.gtf.gz</CODE> from [Ensembl](https://ftp.ensembl.org/pub/release-110/gtf/oryzias_latipes/) 
 
 ### 3. Prepare a genome assembly file (assembly.fna)
 
-e.g., Oryzias_latipes.ASM223467v1.dna.toplevel.fa.gz downloaded from [Ensembl](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/)
+e.g., <CODE>Oryzias_latipes.ASM223467v1.dna.toplevel.fa.gz</CODE> downloaded from [Ensembl](https://ftp.ensembl.org/pub/release-110/fasta/oryzias_latipes/dna/)
 
 ### 4. Prepare a transcript read mapping file (.bam)
 
@@ -51,7 +51,7 @@ Format the reference and gene model using the genome assembly (assembly.fna) and
 ```
 cellranger mkref --genome=custom_ref --genes=genemodel.gtf --fasta=assembly.fna
 ```
-Map Chromium scRNA-seq reads in the directory 'fastq_dir' with ‘cellranger count’
+Map Chromium scRNA-seq reads in the directory <CODE>fastq_dir</CODE> with <CODE>cellranger count</CODE>
 ```
 cellranger count --id=run_count --fastqs=fastq_dir --transcriptome=custom_ref
 ```
@@ -65,15 +65,15 @@ Use the BAM file made above in Part 4 (Part 4.1 or 4.2)
 ```
 peaks2utr --gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemodelNEW.gtf
 ```
-Consider tweaking the parameter <CODE>--max-distance</CODE> ('maximum distance in bases that UTR can be from a transcript') depending on typical UTR lengths and other genomic spacing trends in the species of interest. 
+Consider tweaking the parameter <CODE>--max-distance</CODE> ('maximum distance in bases that UTR can be from a transcript'; default, 200bp) depending on typical UTR lengths and other genomic spacing trends in the species of interest. 
 
 We manaegd to complete this whole process using a GTF file from Ensembl (see [Part 2](https://github.com/Squalomix/utr-modeling/blob/main/README.md#2-prepare-a-gtf-file-genemodelgtf) above) but failed using a file from NCBI for an unknown reason.
 
 ### 6. Analyze the peaks2utr output<br>
 
- **6.1.** Open the output file 'summary_stats.txt'
+ **6.1.** Open the output file <CODE>summary_stats.txt</CODE>
 
- **6.2.** Use ‘agat_sp_statisctics.pl’ from [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
+ **6.2.** Use <CODE>agat_sp_statisctics.pl</CODE> in [AGAT (Another GTF/GFF Analysis Toolkit)](https://agat.readthedocs.io/en/latest/index.html)
 
 
 ### 7. Format the reference and gene model modified by peaks2utr
