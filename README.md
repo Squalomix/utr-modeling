@@ -93,6 +93,9 @@ cellranger count --id=run_countNEW --fastqs=fastq_dir --transcriptome=custom_ref
 **9.1.** Confirm an expected increase of mapping % ('Reads Mapped Confidently to Transcriptome'). Compare this with that of the product of the [Part 4.1](https://github.com/Squalomix/utr-modeling/blob/main/README.md#4-prepare-input-bam-file)
 
 
+## Access to the modified medaka .gtf file
+
+The gene models of the Japanese medaka (Oryzias latipes Hd-Rr) we modified is available [here](https://figshare.com/projects/NBRP-Medaka/176391) at Figshare. 
 
 ## Acknowledgments
 
