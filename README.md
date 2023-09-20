@@ -95,7 +95,7 @@ cellranger count --id=run_countNEW --fastqs=fastq_dir --transcriptome=custom_ref
 
 ## Access to the modified medaka .gtf file
 
-The gene models of the Japanese medaka (Oryzias latipes Hd-Rr) we modified is available [here](https://figshare.com/projects/NBRP-Medaka/176391) at Figshare. 
+The gene models of the Japanese medaka (Oryzias latipes Hd-Rr) we modified is available [here](https://figshare.com/projects/NBRP-Medaka/176391) at Figshare. Cite this with DOI 10.6084/m9.figshare.24080463 when you use this resource in your publication.
 
 ## Acknowledgments
 
