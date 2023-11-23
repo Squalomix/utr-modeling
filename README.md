@@ -67,7 +67,7 @@ peaks2utr --gtf genemodel.gtf run_count/outs/possorted_genome_bam.bam -o genemod
 ```
 Consider tweaking the parameter <CODE>--max-distance</CODE> ('maximum distance in bases that UTR can be from a transcript'; default, 200bp) depending on typical UTR lengths and other genomic spacing trends in the species of interest. 
 
-We had no problem with completing this whole process using a GTF file from Ensembl for medaka, zebrafish, and mouse (see [Part 2](https://github.com/Squalomix/utr-modeling/blob/main/README.md#2-prepare-a-gtf-file-genemodelgtf) above). In using GTF files for these three species from NCBI, we needed to modify them to clean up the attribute (9th) column before running peaks2utr and managed to complete the process.
+We had no problem with completing this whole process using GTF files from Ensembl for medaka, zebrafish, and mouse (see [Part 2](https://github.com/Squalomix/utr-modeling/blob/main/README.md#2-prepare-a-gtf-file-genemodelgtf) above). In using GTF files for these three species from NCBI, we needed to modify them to clean up attribute (9th) columns before running peaks2utr and managed to complete the process.
 
 ### 6. Analyze the peaks2utr output<br>
 
